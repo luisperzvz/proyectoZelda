@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Header*/
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: green;
+}
+
+footer > h4 {
+    font-size: x-large;
+    color: white;
+}
+
+footer > p {
+    font-weight: bold;
+    font-size: larger;
+    color: white
+}
