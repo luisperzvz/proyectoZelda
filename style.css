@@ -26,56 +26,51 @@ body {
  * ############
 */
 
-h1 {
-    position: absolute;
-    color: var(--color-blanco);
-    text-align: center;
-    margin-top: 2.5rem;
-    margin-left: 1rem;
+body > header > nav > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body > header > nav > ul > li > a{
+body > header > nav > ul > li > a {
     color: var(--color-verde-claro);
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    margin-left: 1rem;
+    padding: 10px;
 }
 
 
 body > header > section > video {
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
     border-radius: 20px;
-    padding: 0.3rem;
+    border-style: solid;
+    border-color: var(--color-verde-claro);
 }
-
 
 /**
  * ##########
- * ## main ##
+ * ## Main ##
  * ##########
 */
 
-main {
-    margin: 15rem;
+h1 {
+    color: var(--color-verde-claro);
+    text-align: center;
+    margin-left: 0.2rem;
 }
-
 
 /**
  * ################
  * ## formulario ##
  * ################
 */
-
-
-section.formulario-zelda {
-    background-image: url(./pics/Logo\ ZElda.jpeg);
-    border-radius: 10px;
-    background-size: cover;
-    height: 65vmin;
-    padding: 1rem;
-    margin: 0.3rem;
-}
 
 
 
@@ -85,14 +80,14 @@ h2 {
     font-size: 1rem;
     text-align: center;
     margin: 0.5rem;
-    color: var(--color-rojo-bronce);
+    color: var(--color-verde-claro);
 }
 
 form {
     font-size:large;
     text-align: center;
     font-weight: bold;
-    color: var(--color-rojo-bronce);
+    color: var(--color-verde-claro);
 }
 
 form > label {
@@ -102,6 +97,7 @@ form > label {
 
 form > label,
 form > button {
+    display: block;
     font-size: 0.9rem;
 }
 
@@ -119,7 +115,7 @@ form > input,
 form > textarea {
     color: var(--color-blanco);
     font-weight: bold;
-    background-color: var(--color-crema-fondo);
+    background-color: var(--color-verde-claro);
     border-radius: 2px;
     border: none;
 }
@@ -138,7 +134,6 @@ form > input {
 body > footer {
     width: 100%;
     text-align: center;
-    background-color: var(--color-verde-normal);
     border-radius: 5px;
 }
 
@@ -146,13 +141,13 @@ footer > h3 {
     font-size: x-large;
     /* color: var(--colo-blanco);
      */
-        color: var(--color-verde-footer);
+        color: var(--color-verde-claro);
 }
 
 footer > p {
     font-weight: bold;
     font-size: larger;
-    color: var(--color-verde-footer);
+    color: var(--color-verde-oscuro);
 }
 
 
@@ -162,7 +157,7 @@ footer > p {
  * ############
 */
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     
     /**
  * ###########
@@ -181,14 +176,12 @@ footer > p {
     }
 
     /**
- * ##########
- * ## Main ##
- * ##########
+ * ################
+ * ## Formulario ##
+ * ################
 */
 
-main {
-    margin: 15rem;
-}
+
 
 
 }
