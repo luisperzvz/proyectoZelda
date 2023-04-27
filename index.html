@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zelda</title>
+        <title>Todos los juegos de Zelda</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header>
-            <ul>
-                <li>
-                    <a
-                        href="https://www.mediamarkt.es/es/product/_nintendo-switch-the-legend-of-zelda-tears-of-the-kingdom-1547387.html?utm_source=google&utm_medium=cpc&utm_campaign=rt_shopping_generic_nsp_na_MM-ES-S-G-CAT-PLA-PMAX.PH-PROMO.SECUNDARIOS-ALL-ALL&gclid=CjwKCAjw9J2iBhBPEiwAErwpeQ_FRG0UU96d6XZrZhbunqrGp5ft9x6i8ouy6IQBFgLaUlaTa25aOBoCOXYQAvD_BwE&gclsrc=aw.ds"
-                        >Compralo Ahora!</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://www.nintendo.es/Juegos/Portal-de-Nintendo/Portal-para-The-Legend-of-Zelda/Portal-para-The-Legend-of-Zelda-627606.html"
-                        >Otros Juegos</a
-                    >
-                </li>
-                <li>
-                    <a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda"
-                        >Historia</a
-                    >
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.mediamarkt.es/es/product/_nintendo-switch-the-legend-of-zelda-tears-of-the-kingdom-1547387.html?utm_source=google&utm_medium=cpc&utm_campaign=rt_shopping_generic_nsp_na_MM-ES-S-G-CAT-PLA-PMAX.PH-PROMO.SECUNDARIOS-ALL-ALL&gclid=CjwKCAjw9J2iBhBPEiwAErwpeQ_FRG0UU96d6XZrZhbunqrGp5ft9x6i8ouy6IQBFgLaUlaTa25aOBoCOXYQAvD_BwE&gclsrc=aw.ds"
+                            >¡Compralo Ahora!</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.nintendo.es/Juegos/Portal-de-Nintendo/Portal-para-The-Legend-of-Zelda/Portal-para-The-Legend-of-Zelda-627606.html"
+                            >Otros Juegos</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda"
+                            >Historia</a
+                        >
+                    </li>
+                </ul>
+            </nav>
             <section>
                 <h1>The Legend of Zelda: Tears of the Kingdom</h1>
                 <video
@@ -46,45 +49,47 @@
                 </div>
             </section>
         </main>
-        <form action="/my-handling-form-page" method="post">
-            <div>
-                <ul>
-                    <li>
-                        <label for="name">Tìtulo:</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="JUEGO DE ZELDA"
-                            required
-                        />
-                    </li>
-                    <li>
-                        <label for="num">Año:</label>
-                        <input
-                            type="number"
-                            id="num"
-                            name="num"
-                            placeholder="AÑO DEL JUEGO"
-                            required
-                        />
-                    </li>
-                    <li>
-                        <label for="num">Imagen:</label>
-                        <input
-                            type="number"
-                            id="num"
-                            name="num"
-                            placeholder="INSERTA LA IMAGEN"
-                            required
-                        />
-                    </li>
-                </ul>
-                <button>Enviar</button>
-            </div>
-        </form>
+        <section class="formulario-zelda">
+            <h2>Introduce tu juego de Zelda</h2>
+            <form action="/my-handling-form-page" method="post">
+                <label for="name">Tìtulo</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="JUEGO DE ZELDA"
+                    required
+                />
+                <label for="num">Año</label>
+                <input
+                    type="number"
+                    id="num"
+                    name="num"
+                    placeholder="AÑO DEL JUEGO"
+                    required
+                />
+                <label for="url">Imagen</label>
+                <input
+                    type="url"
+                    id="url"
+                    name="url"
+                    placeholder="INSERTA LA URL"
+                    required
+                />
+                <label for="message">Texto del juego</label>
+                <textarea
+                    type="textarea"
+                    id="message"
+                    name="message"
+                    placeholder="Escribe algo sobre el juego"
+                    maxlength="255"
+                    required
+                ></textarea>
+                <input type="submit" value="Enviar" />
+            </form>
+        </section>
         <footer>
-            <h4>Nuestras Redes</h4>
+            <h3>Nuestras Redes</h3>
             <a href="https://www.instagram.com/zeldanintendo/"
                 ><img src="pics/icons8-instagram.gif"
             /></a>
