@@ -174,7 +174,7 @@ form > input {
 
 /**
  * ############
- * ## Footerr ##
+ * ## Footer ##
  * ############
 */
 
@@ -286,5 +286,68 @@ footer > a > img {
 */
 
 @media (min-width: 1200px) {
+
+    /**
+ * ###########
+ * ## Header##
+ * ###########
+*/
+
+h1 {
+    font-size: xx-large;
+}
+
+
+body > header > nav > ul{
+    font-size: xx-large;
+}
+
+    /**
+ * ##########
+ * ## Main ##
+ * ##########
+*/
+
+.formulario-zelda {
+    margin-left: 163px;
+}
+
+
+form {
+    font-size: xx-large;
+}
+
+form > input {
+    height: 90px;
+}
+
+form > input,
+form > textarea {
+    width: 850px;
+}
+
+form > input {
+    width: 850px;
+}
+
+
+    /**
+ * ##########
+ * ## Footer ##
+ * ##########
+*/
+
+footer > h3 {
+    font-size: xx-large;
+}
+
+footer > a > img {
+    width: 70px;
+}
+
+.nombresautores {
+    font-size: x-large;
+
+}
 
 }
