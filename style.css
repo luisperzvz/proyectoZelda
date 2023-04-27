@@ -260,6 +260,12 @@ form > input {
 }
 
 
+    /**
+ * ##########
+ * ## Footer ##
+ * ##########
+*/
+
 footer > h3 {
     font-size: xx-large;
 }
@@ -274,6 +280,7 @@ footer > a > img {
 }
 
 }
+
 
 /**
  * ############
