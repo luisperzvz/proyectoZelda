@@ -3,3 +3,385 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 17px;
+    --color-verde-oscuro: rgb(11, 83, 69);
+    --color-verde-claro: rgb( 88, 214, 141);
+    --color-rojo-bronce: rgb(100, 30, 22);
+    --color-verde-normal: rgb(0, 128, 0);
+    --color-blanco: rgb(255, 255, 255);
+    --color-verde-footer: rgb(140, 241, 140);
+    --color-crema-fondo:  rgb(240, 178, 122);
+}
+
+body {
+    background-color: var(--color-verde-oscuro);
+}
+
+
+/**
+ * ############
+ * ## Header ##
+ * ############
+*/
+
+h1 {
+    text-align: center;
+    color: rgb( 88, 214, 141);
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb( 88, 214, 141);
+    padding: 10px;
+}
+
+body > header > nav{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body > header > nav > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: smaller;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+body > header > nav > ul > li > a{
+    color: var(--color-verde-claro);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+body > header > section > video {
+    width: 70%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb( 88, 214, 141);
+}
+
+hr {
+    border-color: rgb( 88, 214, 141);
+    margin: 20px;
+
+}
+
+
+/**
+ * ##########
+ * ## main ##
+ * ##########
+*/
+
+.game {
+    text-align: center;
+    margin: 4rem;
+}
+
+h2 {
+    color: var(--color-blanco);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--color-verde-claro);
+    margin-bottom: 1rem;
+    font-size: x-large;
+}
+
+img {
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--color-blanco);
+    font-size: x-large;
+}
+
+/**
+ * ################
+ * ## formulario ##
+ * ################
+*/
+
+
+.formulario-zelda {
+    display:flex;
+    justify-content: center;
+    align-items: space-around;
+    border-radius: 10px;
+    background-size: cover;
+    margin-left: 50px;
+    width: 80%;
+}
+
+
+form {
+    font-size:large;
+    text-align: center;
+    font-weight: bold;
+    color: rgb( 88, 214, 141);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form > label {
+    display: block;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+form > input {
+
+    height: 50px;
+    font-size: smaller;
+
+}
+
+form > textarea {
+    height: 100px;
+    border-radius: 3px;
+}
+
+
+
+form > input,
+form > textarea {
+    color: var(--color-blanco);
+    font-weight: bold;
+    background-color: rgb(140, 241, 140);
+    border-radius: 2px;
+    border: solid;
+    border-color: rgb( 88, 214, 141);
+    width: 250px;
+}
+
+form > input {
+    border-radius: 5px;
+    width: 250px;
+    margin-top: 1rem;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: large;
+    color: var(--color-blanco);
+}
+
+::placeholder :last-child {
+    font-size: larger;
+}
+
+
+/**
+* ############
+* ## Footer ##
+* ############
+*/
+
+
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > h3 {
+    font-size: x-large;
+    /* color: var(--colo-blanco);
+    */
+    color: var(--color-verde-footer);
+}
+
+footer > p {
+    
+    font-size: larger;
+    color: var(--color-verde-footer);
+}
+
+footer > a > img {
+    width: 30px;
+}
+
+.nombresautores {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: small;
+    margin-bottom: 5px;
+}
+
+/**
+* ############
+* ## +800px ##
+* ############
+*/
+
+@media (min-width: 800px) {
+    
+    /**
+    * ###########
+    * ## Header##
+    * ###########
+    */
+    
+    h1 {
+        font-size: xx-large;
+}
+
+
+body > header > nav > ul{
+    font-size: x-large;
+}
+
+    /**
+ * ##########
+ * ## Main ##
+ * ##########
+*/
+
+.formulario-zelda {
+    margin-left: 73px;
+}
+
+
+form {
+    font-size: x-large;
+}
+
+form > input {
+    height: 50px;
+}
+
+form > input,
+form > textarea {
+    width: 400px;
+}
+
+form > input {
+    width: 400px;
+}
+
+
+    /**
+ * ##########
+ * ## Footer ##
+ * ##########
+*/
+
+footer > h3 {
+    font-size: xx-large;
+}
+
+footer > a > img {
+    width: 60px;
+}
+
+.nombresautores {
+    font-size: large;
+
+}
+
+}
+
+
+/**
+ * ############
+ * ## +1200px ##
+ * ############
+*/
+
+@media (min-width: 1200px) {
+
+    /**
+ * ###########
+ * ## Header##
+ * ###########
+*/
+
+h1 {
+    font-size: xx-large;
+}
+
+
+body > header > nav > ul{
+    font-size: xx-large;
+}
+
+    /**
+ * ################
+ * ## Formulario ##
+ * ################
+*/
+
+.formulario-zelda {
+    margin-left: 163px;
+}
+
+
+form {
+    font-size: xx-large;
+}
+
+form > input {
+    height: 90px;
+}
+
+form > input,
+form > textarea {
+    width: 850px;
+}
+
+form > input {
+    width: 850px;
+}
+
+
+    /**
+ * ##########
+ * ## Footer ##
+ * ##########
+*/
+
+footer > h3 {
+    font-size: xx-large;
+}
+
+footer > a > img {
+    width: 70px;
+}
+
+.nombresautores {
+    font-size: x-large;
+
+}
+
+}

@@ -4,39 +4,112 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zelda</title>
+        <title>Zelda Timeline</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header>
-            <ul>
-                <li><a href="https://www.mediamarkt.es/es/product/_nintendo-switch-the-legend-of-zelda-tears-of-the-kingdom-1547387.html?utm_source=google&utm_medium=cpc&utm_campaign=rt_shopping_generic_nsp_na_MM-ES-S-G-CAT-PLA-PMAX.PH-PROMO.SECUNDARIOS-ALL-ALL&gclid=CjwKCAjw9J2iBhBPEiwAErwpeQ_FRG0UU96d6XZrZhbunqrGp5ft9x6i8ouy6IQBFgLaUlaTa25aOBoCOXYQAvD_BwE&gclsrc=aw.ds">Compralo Ahora!</a></li>
-                <li><a href="https://www.nintendo.es/Juegos/Portal-de-Nintendo/Portal-para-The-Legend-of-Zelda/Portal-para-The-Legend-of-Zelda-627606.html">Otros Juegos</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda">Historia</a></li>
+            <nav>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.mediamarkt.es/es/product/_nintendo-switch-the-legend-of-zelda-tears-of-the-kingdom-1547387.html?utm_source=google&utm_medium=cpc&utm_campaign=rt_shopping_generic_nsp_na_MM-ES-S-G-CAT-PLA-PMAX.PH-PROMO.SECUNDARIOS-ALL-ALL&gclid=CjwKCAjw9J2iBhBPEiwAErwpeQ_FRG0UU96d6XZrZhbunqrGp5ft9x6i8ouy6IQBFgLaUlaTa25aOBoCOXYQAvD_BwE&gclsrc=aw.ds"
+                            >¡buy it!</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.nintendo.es/Juegos/Portal-de-Nintendo/Portal-para-The-Legend-of-Zelda/Portal-para-The-Legend-of-Zelda-627606.html"
+                            >Other games</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda"
+                            >History</a
+                        >
+                    </li>
                 </ul>
-            <h1>The Legend of Zelda: Tears of the Kingdom</h1>
-            <div>
-                    <video src="video/The Legend of Zelda_ Tears of the Kingdom – 3.er tráiler oficial (Nintendo Switch).mp4" autoplay muted loop type="Trailer"></video>
-            </div>
+            </nav>
+            <section>
+                <video
+                    src="video/The Legend of Zelda_ Tears of the Kingdom – 3.er tráiler oficial (Nintendo Switch).mp4"
+                    autoplay
+                    muted
+                    loop
+                    type="Trailer"
+                ></video>
+            </section>
         </header>
         <main>
-            <section>
-                <div class="Zelda">
-                    <ul></ul>
+            <hr />
+            <section class="timeline">
+                <div class="zelda">
+                    <h1>Timeline of Zelda Games</h1>
+
+                    <ul id="zeldaGames"></ul>
                 </div>
             </section>
         </main>
-        <form>
-
-        </form>
+        <hr />
+        <h2 class="titulo2">Enter your Zelda game</h2>
+        <section class="formulario-zelda">
+            <form action="/my-handling-form-page" method="post">
+                <label for="name">Title</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="ZELDA GAME"
+                    required
+                />
+                <label for="num">Year</label>
+                <input
+                    type="number"
+                    id="num"
+                    name="num"
+                    placeholder="GAME YEAR"
+                    required
+                />
+                <label for="url">Image</label>
+                <input
+                    type="url"
+                    id="url"
+                    name="url"
+                    placeholder="INSERT THE URL"
+                    required
+                />
+                <label for="message">Description</label>
+                <textarea
+                    type="textarea"
+                    id="message"
+                    name="message"
+                    placeholder="WRITE SOMETHING ABOUT THE GAME"
+                    maxlength="255"
+                    required
+                ></textarea>
+                <input type="submit" value="Send" />
+            </form>
+        </section>
+        <hr />
         <footer>
-            <h4>Nuestras Redes</h4>
-            <a href="https://www.instagram.com/zeldanintendo/"><img src ="pics/icons8-instagram.gif"/></a>
-            <a href="https://www.youtube.com/@NintendoES"><img src="pics/icons8-youtube.gif"/></a>
-            <a href="https://twitter.com/zelda_breath_es?lang=es"><img src="pics/icons8-twitter.gif"/></a>
-            <a href="https://www.facebook.com/LegendofZeldaES/?locale=es_ES"><img src="pics/icons8-facebook.gif"/></a>
-            <p>&copy;Nintendo2023</p>
+            <h3>Can find us on </h3>
+            <a href="https://twitter.com/zelda_breath_es?lang=es"
+                ><img src="pics/gorjeo.png"
+            /></a>
+            <a href="https://www.youtube.com/@NintendoES"
+                ><img src="pics/youtube.png"
+            /></a>
+            <a href="https://www.instagram.com/zeldanintendo/ "
+                ><img src="pics/instagram.png"
+            /></a>
+            <a href="https://www.facebook.com/LegendofZeldaES/?locale=es_ES"
+                ><img src="pics/facebook.png"
+            /></a>
+            <p class="nombresautores">
+                &copy Página Web realizada por Asier, Rafael, Andrés y Luis
+            </p>
         </footer>
-        <script src=""></script>
+        <script type="module" src="./timeline.js"></script>
     </body>
 </html>
