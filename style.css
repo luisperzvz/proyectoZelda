@@ -35,20 +35,13 @@ h1 {
     padding: 10px;
 }
 
-.titulo2 {
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb( 88, 214, 141);
-    padding: 10px;
-}
 
 body > header > nav{
     display: flex;
     justify-content: center;
     text-decoration: none;
     list-style: none;
-
+    
 }
 
 body > header > nav > ul{
@@ -74,7 +67,7 @@ body > header > nav > ul > li > a{
 section {
     display: flex;
     justify-content: center;
-
+    
 }
 
 
@@ -88,14 +81,14 @@ body > header > section > video {
 hr {
     border-color: rgb( 88, 214, 141);
     margin: 20px;
-
+    
 }
 
 
 /**
- * ##########
- * ## main ##
- * ##########
+* ##########
+* ## main ##
+* ##########
 */
 
 .game {
@@ -125,11 +118,18 @@ p {
 }
 
 /**
- * ################
- * ## formulario ##
- * ################
+* ################
+* ## formulario ##
+* ################
 */
 
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb( 88, 214, 141);
+    padding: 10px;
+}
 
 .formulario-zelda {
     display:flex;
@@ -192,10 +192,6 @@ form > input {
     text-align: center;
     font-size: large;
     color: var(--color-blanco);
-}
-
-::placeholder :last-child {
-    font-size: larger;
 }
 
 
@@ -263,9 +259,9 @@ body > header > nav > ul{
 }
 
     /**
- * ##########
- * ## Main ##
- * ##########
+ * ################
+ * ## Formulario ##
+ * ################
 */
 
 .formulario-zelda {
@@ -292,9 +288,9 @@ form > input {
 
 
     /**
- * ##########
+ * ############
  * ## Footer ##
- * ##########
+ * ############
 */
 
 footer > h3 {
@@ -314,17 +310,17 @@ footer > a > img {
 
 
 /**
- * ############
+ * #############
  * ## +1200px ##
- * ############
+ * #############
 */
 
 @media (min-width: 1200px) {
 
     /**
- * ###########
- * ## Header##
- * ###########
+ * ############
+ * ## Header ##
+ * ############
 */
 
 h1 {
@@ -334,6 +330,10 @@ h1 {
 
 body > header > nav > ul{
     font-size: xx-large;
+}
+
+body > header > nav > ul > li > a{
+    margin: 3rem;
 }
 
     /**
