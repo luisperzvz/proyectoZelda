@@ -106,6 +106,7 @@ h3 {
     color: var(--color-verde-claro);
     margin-bottom: 1rem;
     font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -116,6 +117,7 @@ img {
 p {
     color: var(--color-blanco);
     font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /**
