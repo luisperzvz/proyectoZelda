@@ -33,7 +33,7 @@ async function createUlContent () {
         li.innerHTML = `
             <div class="game">
                 <h2>${game.date}</h2>
-                <p>${game.title}</p>
+                <h3>${game.title}</h3>
                 <img src="${game.image}" alt="Image ${game.title}" />
                 <p>${game.text}</p>
             </div>
